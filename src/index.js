@@ -13,6 +13,7 @@ const theme = {
     mineShaft: "#252525",
     slateGray: "#6E7E91",
     mercury: "#E5E5E5",
+    iron: "#D1D5DA",
   },
   gradients: {
     primary:
