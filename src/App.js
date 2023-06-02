@@ -1,7 +1,7 @@
-
+import { Hero } from "./Features/Hero";
 
 function App() {
-  return <></>;
+  return <Hero />;
 }
 
 export default App;
