@@ -7,7 +7,7 @@ const HeroContainer = styled.div`
 
   @media (min-width: 800px) {
     grid-template-columns: 353px 1fr;
-    gap: 100px;
+    gap: 60px;
   }
 `;
 
