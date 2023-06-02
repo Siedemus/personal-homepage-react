@@ -14,32 +14,38 @@ import { Title } from "../../Common/Title";
 import avatar from "../../Assets/Images/avatar.png";
 import postCard from "../../Assets/Images/email.svg";
 import { Switch } from "./Switch";
+import { useSelector } from "react-redux";
+import { selectDarkMode } from "./Switch/switchSlice";
 
-export const Hero = () => (
-  <HeroContainer>
-    <ImageContainer>
-      <Image alt="Avatar Image" src={avatar} />
-    </ImageContainer>
-    <InfoContainer>
-      <Title body={"This is"} />
-      <Header body={"Bartosz Sakiewa"} />
-      <Text
-        body={`🧙💻  I’m a passionate Frontend
-Developer in love with React,
-currently looking for new job
-opportunities.`}
-      />
-      <Button
-        href="mailto:barsak1177@gmail.com"
-        body={
-          <>
-            <ButtonIcon src={postCard} />
-            <ButtonContent>Hire Me</ButtonContent>
-          </>
-        }
-      />
-    </InfoContainer>
-    <SwitchTitle>Dark mode off</SwitchTitle>
-    <Switch />
-  </HeroContainer>
-);
+export const Hero = () => {
+  const toggleSwitch = useSelector(selectDarkMode);
+
+  return (
+    <HeroContainer>
+      <ImageContainer>
+        <Image alt="Avatar Image" src={avatar} />
+      </ImageContainer>
+      <InfoContainer>
+        <Title body={"This is"} />
+        <Header body={"Bartosz Sakiewa"} />
+        <Text
+          body={`🧙💻  I’m a passionate Frontend
+  Developer in love with React,
+  currently looking for new job
+  opportunities.`}
+        />
+        <Button
+          href="mailto:barsak1177@gmail.com"
+          body={
+            <>
+              <ButtonIcon src={postCard} />
+              <ButtonContent>Hire Me</ButtonContent>
+            </>
+          }
+        />
+      </InfoContainer>
+      <SwitchTitle>Dark mode {toggleSwitch ? "on" : "off"}</SwitchTitle>
+      <Switch />
+    </HeroContainer>
+  );
+};

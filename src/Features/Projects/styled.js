@@ -5,7 +5,9 @@ const Text = styled.p`
   font-weight: 400;
   font-size: 21px;
   line-height: 140%;
+  margin-top: -15px;
   margin-bottom: 24px;
+  color: ${({ theme }) => theme.colors.malaga};
 `;
 
 const ProjectsContainer = styled.div`
@@ -25,7 +27,7 @@ const Project = styled.div`
   flex-grow: 1;
   align-items: center;
   padding: 24px 30px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.containerColor};
   border: 6px solid ${({ theme }) => theme.colors.iron};
   border-radius: 4px;
   transition: 0.8s;

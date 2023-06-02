@@ -8,7 +8,7 @@ export const StyledButton = styled.a`
   width: 138px;
   height: 46px;
   border-radius: 4px;
-  color: ${({theme}) => theme.colors.white};
+  color: ${({theme}) => theme.colors.containerColor};
   transition: 1s;
   display: flex;
   display: flex;

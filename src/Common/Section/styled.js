@@ -4,7 +4,7 @@ export const StyledSection = styled.section`
   padding: 16px 16px 0;
   display: flex;
   gap: 12px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.containerColor};
   display: flex;
   flex-direction: column;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),

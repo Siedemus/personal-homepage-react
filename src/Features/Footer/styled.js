@@ -8,7 +8,7 @@ const FooterDescription = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.malaga};
   margin-bottom: 28px;
   max-width: 670px;
   letter-spacing: 0.05em;
@@ -34,11 +34,14 @@ const DiscordIcon = Icon(discordIcon);
 
 const GithubIcon = Icon(githubIcon);
 
-const GithubContainer = styled.a``;
+const GithubContainer = styled.a`
+  fill: ${({ theme }) => theme.colors.malaga};
+`;
 
 const DiscordContainer = styled.div`
   transition: 1s;
   position: relative;
+  fill: ${({ theme }) => theme.colors.malaga};
 
   &:hover {
     &::after {

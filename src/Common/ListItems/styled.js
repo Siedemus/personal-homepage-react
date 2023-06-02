@@ -9,8 +9,4 @@ const ListItem = styled.li`
   }
 `;
 
-const ItemContent = styled.span`
-  color: ${({ theme }) => theme.colors.slateGray};
-`;
-
-export { ListItem, ItemContent };
+export { ListItem };

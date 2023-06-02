@@ -1,12 +1,10 @@
-import { ListItem, ItemContent } from "./styled";
+import { ListItem } from "./styled";
 
 export const ListItems = ({ items }) => {
   return (
     <>
       {items.map((item) => (
-        <ListItem key={item}>
-          {item}
-        </ListItem>
+        <ListItem key={item}>{item}</ListItem>
       ))}
     </>
   );

@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
 */
 html, body {
   height: 100%;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
 }
 /*
   Typographic tweaks!
@@ -29,7 +30,6 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: ${({ theme }) => theme.colors.whiteLilac};
   padding: 0 17px 0 16px;
   letter-spacing: 0.05em;
   max-width: 1200px;
