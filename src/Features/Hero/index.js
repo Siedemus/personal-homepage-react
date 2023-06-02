@@ -28,6 +28,7 @@ currently looking for new job
 opportunities.`}
     />
     <Button
+      href="mailto:barsak1177@gmail.com"
       body={
         <>
           <ButtonIcon src={postCard} />

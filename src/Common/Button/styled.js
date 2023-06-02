@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.a`
   border: none;
   background-image: ${({ theme }) => theme.gradients.second};
   background-size: 290%;
@@ -16,6 +16,7 @@ export const StyledButton = styled.button`
   align-items: center;
   gap: 10px;
   margin: 24px 0 4px 0;
+  text-decoration: none;
 
   &:hover {
     background-position: right;
