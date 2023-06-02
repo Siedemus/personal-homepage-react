@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const HeroContainer = styled.div`
   display: grid;
-  margin: 21px 17px 40px 16px;
+  margin: 21px 0 40px 0;
   position: relative;
 `;
 

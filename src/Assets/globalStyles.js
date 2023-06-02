@@ -30,6 +30,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: ${({ theme }) => theme.colors.whiteLilac};
+  padding: 0 17px 0 16px;
 }
 /*
   6. Improve media defaults
