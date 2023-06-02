@@ -10,7 +10,7 @@ import { Header } from "../../Common/Header";
 import { Text } from "../../Common/Text";
 import { Title } from "../../Common/Title";
 import avatar from "../../Assets/Images/avatar.png";
-import postCard from "../../Assets/Images/email.png";
+import postCard from "../../Assets/Images/email.svg";
 import { Switch } from "./Switch";
 
 export const Hero = () => (
