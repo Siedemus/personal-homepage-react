@@ -30,8 +30,8 @@ const Image = styled.img`
     `}
 `;
 const ButtonIcon = styled.img`
-  width: 35px;
-  height: 15px;
+  width: 26px;
+  height: 24px;
 `;
 
 const ButtonContent = styled.p`
