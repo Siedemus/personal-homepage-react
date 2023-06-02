@@ -4,6 +4,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./Assets/globalStyles";
+import { store } from "./store";
+import { Provider } from "react-redux";
 
 const theme = {
   colors: {
@@ -26,10 +28,12 @@ const theme = {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeProvider theme={theme}>
-    <React.StrictMode>
-      <GlobalStyles />
-      <App />
-    </React.StrictMode>
+    <Provider store={store}>
+      <React.StrictMode>
+        <GlobalStyles />
+        <App />
+      </React.StrictMode>
+    </Provider>
   </ThemeProvider>
 );
 

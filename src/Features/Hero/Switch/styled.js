@@ -45,6 +45,13 @@ const StyledSwitch = styled.div`
 const SwitchIcon = styled.img`
   width: 13px;
   height: 13px;
+  transition: 0.5s;
+
+  ${({ toggleSwitch }) =>
+    toggleSwitch &&
+    css`
+      transform: rotate(180deg);
+    `}
 `;
 
 export { SwitchContainer, StyledSwitch, SwitchIcon };
