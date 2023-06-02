@@ -6,4 +6,6 @@ font-weight: 700;
 font-size: 12px;
 line-height: normal;
 text-transform: uppercase;
+margin: 12px 0 0 0;
+color: ${({theme}) => theme.colors.slateGray};
 `
