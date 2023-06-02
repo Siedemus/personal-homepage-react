@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-const Icon = styled.img`
-  width: 42px;
-  height: 42px;
-`;
-
 const Text = styled.p`
   font-weight: 400;
   font-size: 21px;
@@ -78,6 +73,5 @@ export {
   ProjectReferences,
   ProjectTitle,
   Text,
-  Icon,
   ProjectsContainer,
 };
