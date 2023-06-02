@@ -15,10 +15,10 @@ import avatar from "../../Assets/Images/avatar.png";
 import postCard from "../../Assets/Images/email.svg";
 import { Switch } from "./Switch";
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "./Switch/switchSlice";
+import { selectIsDarkMode } from "./Switch/switchSlice";
 
 export const Hero = () => {
-  const toggleSwitch = useSelector(selectDarkMode);
+  const darkMode = useSelector(selectIsDarkMode);
 
   return (
     <HeroContainer>
@@ -44,7 +44,7 @@ export const Hero = () => {
           }
         />
       </InfoContainer>
-      <SwitchTitle>Dark mode {toggleSwitch ? "on" : "off"}</SwitchTitle>
+      <SwitchTitle>Dark mode {darkMode ? "on" : "off"}</SwitchTitle>
       <Switch />
     </HeroContainer>
   );

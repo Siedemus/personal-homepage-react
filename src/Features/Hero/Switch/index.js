@@ -3,16 +3,16 @@ import sun from "../../../Assets/Images/sun.png";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { switchDarkMode } from "./switchSlice";
-import { selectDarkMode } from "./switchSlice";
+import { selectIsDarkMode } from "./switchSlice";
 
 export const Switch = () => {
-  const toggleSwitch = useSelector(selectDarkMode);
+  const darkMode = useSelector(selectIsDarkMode);
   const dispatch = useDispatch();
 
   return (
     <SwitchContainer onClick={() => dispatch(switchDarkMode())}>
-      <StyledSwitch toggleSwitch={toggleSwitch}>
-        <SwitchIcon toggleSwitch={toggleSwitch} src={sun} />
+      <StyledSwitch darkMode={darkMode}>
+        <SwitchIcon darkMode={darkMode} src={sun} />
       </StyledSwitch>
     </SwitchContainer>
   );

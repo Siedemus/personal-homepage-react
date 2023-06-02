@@ -6,14 +6,14 @@ import { Skillset } from "./Features/Skillset";
 import { WantLearn } from "./Features/WantToLearn";
 import { GlobalStyles } from "./Assets/globalStyles";
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "./Features/Hero/Switch/switchSlice";
+import { selectIsDarkMode } from "./Features/Hero/Switch/switchSlice";
 import { darkTheme, lightTheme } from "./Assets/theme";
 
 function App() {
-  const toggleSwitch = useSelector(selectDarkMode);
+  const darkMode = useSelector(selectIsDarkMode);
 
   return (
-    <ThemeProvider theme={toggleSwitch ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
       <main>
         <Hero />

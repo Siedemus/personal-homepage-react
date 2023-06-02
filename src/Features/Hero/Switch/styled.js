@@ -35,8 +35,8 @@ const StyledSwitch = styled.div`
   position: absolute;
   transition: 0.5s;
 
-  ${({ toggleSwitch }) =>
-    toggleSwitch &&
+  ${({ darkMode }) =>
+    darkMode &&
     css`
       transform: translateX(21px);
     `}
@@ -47,8 +47,8 @@ const SwitchIcon = styled.img`
   height: 13px;
   transition: 0.5s;
 
-  ${({ toggleSwitch }) =>
-    toggleSwitch &&
+  ${({ darkMode }) =>
+    darkMode &&
     css`
       transform: rotate(180deg);
     `}

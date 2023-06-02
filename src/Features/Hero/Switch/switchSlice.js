@@ -5,7 +5,7 @@ const initialState = {
 };
 
 const switchSlice = createSlice({
-  name: "switch",
+  name: "darkMode",
   initialState,
   reducers: {
     switchDarkMode: (state) => {
@@ -16,7 +16,6 @@ const switchSlice = createSlice({
 
 export const { switchDarkMode } = switchSlice.actions;
 
-export const selectDarkMode = (state) => state.switch.darkMode;
-
+export const selectIsDarkMode = (state) => state.switch.darkMode;
 
 export default switchSlice.reducer;
