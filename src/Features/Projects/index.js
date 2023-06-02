@@ -7,11 +7,11 @@ import {
   ProjectTitle,
   ProjectsContainer,
   Text,
-  Icon,
 } from "./styled";
 import { Container } from "../../Common/Container";
 import { Header } from "../../Common/Header";
 import githubIcon from "../../Assets/Images/github.svg";
+import Icon from "../../Common/Icon/styled";
 
 export const Projects = () => (
   <Container
