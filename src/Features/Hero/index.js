@@ -4,7 +4,8 @@ import {
   HeroContainer,
   Image,
   ImageContainer,
-  InfoContainer
+  InfoContainer,
+  SwitchTitle,
 } from "./styled";
 import { Button } from "../../Common/Button";
 import { Header } from "../../Common/Header";
@@ -38,6 +39,7 @@ opportunities.`}
         }
       />
     </InfoContainer>
+    <SwitchTitle>Dark mode off</SwitchTitle>
     <Switch />
   </HeroContainer>
 );

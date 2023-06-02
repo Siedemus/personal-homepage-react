@@ -66,6 +66,23 @@ const ButtonContent = styled.p`
   line-height: 22px;
 `;
 
+const SwitchTitle = styled.p`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.slateGray};
+  display: none;
+  position: absolute;
+  right: 60px;
+  top: 3px;
+
+  @media (min-width: 900px) {
+    display: block;
+  }
+`;
+
 export {
   HeroContainer,
   Image,
@@ -73,4 +90,5 @@ export {
   ButtonContent,
   ButtonIcon,
   InfoContainer,
+  SwitchTitle,
 };
