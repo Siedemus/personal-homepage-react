@@ -13,6 +13,10 @@ const theme = {
     mineShaft: "#252525",
     slateGray: "#6E7E91",
   },
+  gradients: {
+    primary:
+      "linear-gradient(107deg, rgba(177,31,239,1) 30%, rgba(171,12,126,1) 100%);",
+  },
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
