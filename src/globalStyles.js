@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 */
 * {
   margin: 0;
+  font-family: "Inter";
 }
 /*
   3. Allow percentage-based heights in the application
