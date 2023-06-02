@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./globalStyles";
+import { GlobalStyles } from "./Assets/globalStyles";
 
 const theme = {
   colors: {
     whiteLilac: "#FBFBFE",
     white: "#FFFFFF",
-    scienceBlue: "#0366D6",
+    violet: "#B11FEF",
     mineShaft: "#252525",
     slateGray: "#6E7E91",
   },
