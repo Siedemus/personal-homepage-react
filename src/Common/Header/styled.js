@@ -11,4 +11,12 @@ export const StyledHeader = styled.h2`
     css`
       font-size: ${fontSize};
     `}
+
+  ${({ containerHeader }) =>
+    containerHeader &&
+    css`
+      padding-bottom: 12px;
+      border-bottom: 1px solid ${({theme}) => theme.colors.iron};
+      margin: 0;
+    `}
 `;
