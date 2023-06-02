@@ -31,6 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: ${({ theme }) => theme.colors.whiteLilac};
   padding: 0 17px 0 16px;
+  letter-spacing: 0.05em;
 }
 /*
   6. Improve media defaults

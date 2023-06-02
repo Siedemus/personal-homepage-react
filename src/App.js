@@ -1,4 +1,5 @@
 import { Hero } from "./Features/Hero";
+import { Projects } from "./Features/Projects";
 import { Skillset } from "./Features/Skillset";
 import { WantLearn } from "./Features/WantToLearn";
 
@@ -10,9 +11,7 @@ function App() {
         <Skillset />
         <WantLearn />
       </article>
-      <article>
-        
-      </article>
+      <Projects />
     </main>
   );
 }
