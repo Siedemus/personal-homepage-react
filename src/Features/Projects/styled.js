@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as githubIconFile } from "../../Assets/Images/github.svg";
 
 const Text = styled.p`
   font-weight: 400;
@@ -65,12 +66,21 @@ const ProjectLink = styled.a`
   color: ${({ theme }) => theme.colors.violet};
 `;
 
+const Icon = (Icon) => styled(Icon)`
+  width: 42px;
+  height: 42px;
+  fill: ${({ theme }) => theme.colors.violet};
+`;
+
+const GithubIcon = Icon(githubIconFile);
+
 export {
   Project,
   ProjectDescription,
   ProjectLink,
   ProjectReference,
   ProjectReferences,
+  GithubIcon,
   ProjectTitle,
   Text,
   ProjectsContainer,

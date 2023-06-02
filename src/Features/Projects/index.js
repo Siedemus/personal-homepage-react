@@ -7,17 +7,16 @@ import {
   ProjectTitle,
   ProjectsContainer,
   Text,
+  GithubIcon,
 } from "./styled";
 import { Container } from "../../Common/Container";
 import { Header } from "../../Common/Header";
-import githubIcon from "../../Assets/Images/github.svg";
-import Icon from "../../Common/Icon/styled";
 
 export const Projects = () => (
   <Container
     body={
       <>
-        <Icon src={githubIcon} alt="github icon" />
+        <GithubIcon />
         <Header body={"Portfolio"} />
         <Text>My recent projects</Text>
         <ProjectsContainer>
