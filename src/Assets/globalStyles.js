@@ -32,6 +32,8 @@ body {
   background-color: ${({ theme }) => theme.colors.whiteLilac};
   padding: 0 17px 0 16px;
   letter-spacing: 0.05em;
+  max-width: 1000px;
+  margin: auto;
 }
 /*
   6. Improve media defaults
