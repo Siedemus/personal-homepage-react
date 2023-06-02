@@ -2,16 +2,16 @@ import styled from "styled-components";
 import { ReactComponent as discordIcon } from "../../Assets/Images/discord.svg";
 import { ReactComponent as githubIcon } from "../../Assets/Images/github.svg";
 
-const StyledFooter = styled.footer`
-  margin-top: 48px;
-`;
+const StyledFooter = styled.footer``;
 
 const FooterDescription = styled.p`
   font-weight: 400;
   font-size: 18px;
-  line-height: 17px;
+  line-height: 25px;
   color: ${({ theme }) => theme.colors.mineShaft};
   margin-bottom: 28px;
+  max-width: 670px;
+  letter-spacing: 0.05em;
 `;
 
 const IconsContainer = styled.div`
@@ -21,8 +21,8 @@ const IconsContainer = styled.div`
 `;
 
 const Icon = (Icon) => styled(Icon)`
-  width: 42px;
-  height: 42px;
+  width: 62px;
+  height: 62px;
   cursor: pointer;
 
   &:hover {
@@ -45,7 +45,7 @@ const DiscordContainer = styled.div`
       position: absolute;
       content: "7us#2920";
       top: -35px;
-      left: -25px;
+      left: -15px;
       background-image: ${({ theme }) => theme.gradients.primary};
       border-radius: 15px;
       padding: 7px;

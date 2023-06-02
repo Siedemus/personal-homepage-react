@@ -4,6 +4,7 @@ import {
   HeroContainer,
   Image,
   ImageContainer,
+  InfoContainer
 } from "./styled";
 import { Button } from "../../Common/Button";
 import { Header } from "../../Common/Header";
@@ -18,23 +19,25 @@ export const Hero = () => (
     <ImageContainer>
       <Image alt="Avatar Image" src={avatar} />
     </ImageContainer>
-    <Switch />
-    <Title body={"This is"} />
-    <Header body={"Bartosz Sakiewa"} />
-    <Text
-      body={`🧙💻  I’m a passionate Frontend
+    <InfoContainer>
+      <Title body={"This is"} />
+      <Header body={"Bartosz Sakiewa"} />
+      <Text
+        body={`🧙💻  I’m a passionate Frontend
 Developer in love with React,
 currently looking for new job
 opportunities.`}
-    />
-    <Button
-      href="mailto:barsak1177@gmail.com"
-      body={
-        <>
-          <ButtonIcon src={postCard} />
-          <ButtonContent>Hire Me</ButtonContent>
-        </>
-      }
-    />
+      />
+      <Button
+        href="mailto:barsak1177@gmail.com"
+        body={
+          <>
+            <ButtonIcon src={postCard} />
+            <ButtonContent>Hire Me</ButtonContent>
+          </>
+        }
+      />
+    </InfoContainer>
+    <Switch />
   </HeroContainer>
 );

@@ -10,8 +10,12 @@ const Text = styled.p`
 
 const ProjectsContainer = styled.div`
   display: grid;
-  gap: 16px;
-  border-bottom: 48px;
+  gap: 40px;
+  margin-bottom: 60px;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const Project = styled.div`
@@ -20,18 +24,27 @@ const Project = styled.div`
   justify-content: center;
   flex-grow: 1;
   align-items: center;
-  padding: 24px;
+  padding: 24px 30px;
   background-color: ${({ theme }) => theme.colors.white};
   border: 6px solid ${({ theme }) => theme.colors.iron};
   border-radius: 4px;
+  transition: 0.8s;
+  max-width: 590px;
+  max-height: 330px;
+  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
+    0px 16px 58px rgba(9, 10, 51, 0.03);
+
+  &:hover {
+    border: 6px solid ${({ theme }) => theme.colors.violet};
+  }
 `;
 
 const ProjectTitle = styled.h3`
   font-weight: 700;
   color: ${({ theme }) => theme.colors.violet};
-  font-size: 20px;
+  font-size: 24px;
   line-height: 19px;
-  margin: 0 16px 16px 0;
+  margin: 16px 16px 16px 0;
 `;
 
 const ProjectDescription = styled.p`
@@ -42,18 +55,18 @@ const ProjectDescription = styled.p`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.colors.slateGray};
-  padding-bottom: 16px;
+  padding: 16px 0 24px;
 `;
 
 const ProjectReferences = styled.div`
   display: grid;
   grid-template-columns: 2fr;
-  gap: 10px;
+  gap: 20px;
+  font-size: 16px;
 `;
 
 const ProjectReference = styled.p`
   font-weight: 400;
-  font-size: 16px;
   line-height: 17px;
   display: flex;
   align-items: center;

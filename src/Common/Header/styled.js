@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const StyledHeader = styled.h2`
   font-style: normal;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 40px;
   margin: 8px 0 16px 0;
 
   ${({ fontSize }) =>
@@ -18,5 +18,12 @@ export const StyledHeader = styled.h2`
       padding-bottom: 12px;
       border-bottom: 1px solid ${({theme}) => theme.colors.iron};
       margin: 0;
+    `}
+
+    ${({email}) => email && css`
+    transition: 0.5s;
+    &:hover {
+      color: ${({theme}) => theme.colors.violet};
+    }
     `}
 `;

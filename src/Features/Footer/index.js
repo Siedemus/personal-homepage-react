@@ -13,7 +13,7 @@ import {
 export const Footer = () => (
   <StyledFooter>
     <Title body={`Let’s talk!`} />
-    <Header body={"barsak1177@gmail.com"} fontSize={"22px"} />
+    <Header email body={"barsak1177@gmail.com"} fontSize={"30px"} />
     <FooterDescription>
       I’m always open to new projects whenever I have the time. If you have a
       website, dashboard or mobile app in mind and need some help to make your

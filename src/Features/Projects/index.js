@@ -52,6 +52,70 @@ export const Projects = () => (
               </ProjectReference>
             </ProjectReferences>
           </Project>
+          <Project>
+            <ProjectTitle>Movie Browser</ProjectTitle>
+            <ProjectDescription>
+              Project description, e.g. website where you can search for
+              favourite movies and people. Project description, e.g. website
+              where you can search.
+            </ProjectDescription>
+            <ProjectReferences>
+              <ProjectReference>
+                Demo:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+              <ProjectReference>
+                Code:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+            </ProjectReferences>
+          </Project>
+          <Project>
+            <ProjectTitle>Movie Browser</ProjectTitle>
+            <ProjectDescription>
+              Project description, e.g. website where you can search for
+              favourite movies and people. Project description, e.g. website
+              where you can search.
+            </ProjectDescription>
+            <ProjectReferences>
+              <ProjectReference>
+                Demo:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+              <ProjectReference>
+                Code:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+            </ProjectReferences>
+          </Project>
+          <Project>
+            <ProjectTitle>Movie Browser</ProjectTitle>
+            <ProjectDescription>
+              Project description, e.g. website where you can search for
+              favourite movies and people. Project description, e.g. website
+              where you can search.
+            </ProjectDescription>
+            <ProjectReferences>
+              <ProjectReference>
+                Demo:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+              <ProjectReference>
+                Code:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+            </ProjectReferences>
+          </Project>
+          <Project>
+            <ProjectTitle>Movie Browser</ProjectTitle>
+            <ProjectDescription>
+              Project description, e.g. website where you can search for
+              favourite movies and people. Project description, e.g. website
+              where you can search.
+            </ProjectDescription>
+            <ProjectReferences>
+              <ProjectReference>
+                Demo:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+              <ProjectReference>
+                Code:&nbsp;<ProjectLink>https://link.demo.com</ProjectLink>
+              </ProjectReference>
+            </ProjectReferences>
+          </Project>
         </ProjectsContainer>
       </>
     }

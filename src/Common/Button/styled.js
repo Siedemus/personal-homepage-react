@@ -15,7 +15,7 @@ export const StyledButton = styled.a`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 24px 0 4px 0;
+  margin: 32px 0 4px 0;
   text-decoration: none;
 
   &:hover {

@@ -6,7 +6,7 @@ import { skillset } from "./skillset";
 
 export const Skillset = () => (
   <Section
-    header={<Header containerHeader={true} fontSize={"22px"} body={"My skillset includes 🛠️"} />}
+    header={<Header containerHeader={true} fontSize={"30px"} body={"My skillset includes 🛠️"} />}
     body={<List body={<ListItems items={skillset} />} />}
   />
 );

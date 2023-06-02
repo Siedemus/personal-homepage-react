@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledTitle = styled.p`
 font-style: normal;
 font-weight: 700;
-font-size: 12px;
+font-size: 15px;
 line-height: normal;
 text-transform: uppercase;
 margin: 12px 0 0 0;

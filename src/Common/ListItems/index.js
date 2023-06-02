@@ -5,7 +5,7 @@ export const ListItems = ({ items }) => {
     <>
       {items.map((item) => (
         <ListItem key={item}>
-          <ItemContent>{item}</ItemContent>
+          {item}
         </ListItem>
       ))}
     </>

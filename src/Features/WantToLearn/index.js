@@ -9,7 +9,7 @@ export const WantLearn = () => (
     header={
       <Header
         containerHeader={true}
-        fontSize={"22px"}
+        fontSize={"30px"}
         body={"What I want to learn next 🚀"}
       />
     }

@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 const ListItem = styled.li`
-  padding: 8px 0;
+  padding-top: 8px;
+
+  &::marker {
+    color: ${({ theme }) => theme.colors.violet};
+    font-size: 30px;
+  }
 `;
 
 const ItemContent = styled.span`
