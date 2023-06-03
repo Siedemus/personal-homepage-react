@@ -56,9 +56,7 @@ export const Projects = () => {
                     <ProjectReference>
                       Demo:&nbsp;
                       <ProjectLink target="_blank" href={project.homepage}>
-                        {project.homepage
-                          ? "Click Me!"
-                          : "Demo doesn't exist! 🤯"}
+                        {project.homepage ? "Click Me!" : "No Data! 😾🤯💥"}
                       </ProjectLink>
                     </ProjectReference>
                     <ProjectReference>
