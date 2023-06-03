@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.cce5ecea.js",
+    "main.js": "/personal-homepage-react/static/js/main.40e2af49.js",
     "static/js/787.df33c875.chunk.js": "/personal-homepage-react/static/js/787.df33c875.chunk.js",
     "static/media/avatar.png": "/personal-homepage-react/static/media/avatar.e552a17754634fa7d7e6.png",
     "static/media/sun.png": "/personal-homepage-react/static/media/sun.82914403cb28b459bd47.png",
@@ -8,10 +8,10 @@
     "static/media/github.svg": "/personal-homepage-react/static/media/github.8136328bf8828c59a35168ab65a2f7a1.svg",
     "index.html": "/personal-homepage-react/index.html",
     "static/media/email.svg": "/personal-homepage-react/static/media/email.1be0ec943f55356198dede064b029879.svg",
-    "main.cce5ecea.js.map": "/personal-homepage-react/static/js/main.cce5ecea.js.map",
+    "main.40e2af49.js.map": "/personal-homepage-react/static/js/main.40e2af49.js.map",
     "787.df33c875.chunk.js.map": "/personal-homepage-react/static/js/787.df33c875.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.cce5ecea.js"
+    "static/js/main.40e2af49.js"
   ]
 }
