@@ -60,9 +60,6 @@ const ButtonIcon = styled.img`
 `;
 
 const ButtonContent = styled.p`
-  color: ${({ theme }) => theme.colors.white};
-  font-weight: 600;
-  font-size: 18px;
   line-height: 22px;
 `;
 

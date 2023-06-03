@@ -8,7 +8,7 @@ export const StyledButton = styled.a`
   width: 138px;
   height: 46px;
   border-radius: 4px;
-  color: ${({theme}) => theme.colors.containerColor};
+  color: ${({ theme }) => theme.colors.white};
   transition: 1s;
   display: flex;
   display: flex;
@@ -17,6 +17,8 @@ export const StyledButton = styled.a`
   gap: 10px;
   margin: 32px 0 4px 0;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
 
   &:hover {
     background-position: right;

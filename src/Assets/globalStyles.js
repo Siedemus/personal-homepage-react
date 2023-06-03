@@ -34,6 +34,7 @@ body {
   letter-spacing: 0.05em;
   max-width: 1200px;
   
+  
   @media (min-width: 800px) {
     margin: 50px auto;
   }

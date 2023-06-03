@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as githubIconFile } from "../../Assets/Images/github.svg";
 
 const Text = styled.p`
@@ -7,6 +7,40 @@ const Text = styled.p`
   line-height: 140%;
   margin-top: -15px;
   margin-bottom: 24px;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.malaga};
+  max-width: 430px;
+
+  ${({ loadingContainer }) =>
+    loadingContainer &&
+    css`
+      margin-bottom: 80px;
+    `}
+`;
+
+const LoadingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 0 180px 0;
+`;
+
+const ErrorContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 0 180px 0;
+`;
+
+const ErrorMessage = styled.p`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 0 40px 0;
   color: ${({ theme }) => theme.colors.malaga};
 `;
 
@@ -23,8 +57,6 @@ const ProjectsContainer = styled.div`
 const Project = styled.div`
   display: grid;
   flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
   align-items: center;
   padding: 24px 30px;
   background-color: ${({ theme }) => theme.colors.containerColor};
@@ -99,4 +131,7 @@ export {
   ProjectTitle,
   Text,
   ProjectsContainer,
+  LoadingContainer,
+  ErrorContainer,
+  ErrorMessage,
 };
