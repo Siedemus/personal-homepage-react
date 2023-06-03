@@ -16,8 +16,24 @@ import postCard from "../../Assets/Images/email.svg";
 import { Switch } from "./Switch";
 import { useSelector } from "react-redux";
 import { selectIsDarkMode } from "./Switch/switchSlice";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export const Hero = () => {
+  const [text] = useTypewriter({
+    words: [
+      "This is",
+      "To jest",
+      "Esto es",
+      "C'est",
+      "Das ist",
+      "Questo è",
+      "これは",
+      "這是",
+    ],
+    loop: {},
+    typeSpeed: 120,
+  });
+
   const darkMode = useSelector(selectIsDarkMode);
 
   return (
@@ -26,7 +42,14 @@ export const Hero = () => {
         <Image alt="Avatar Image" src={avatar} />
       </ImageContainer>
       <InfoContainer>
-        <Title body={"This is"} />
+        <Title
+          body={
+            <>
+              {text}
+              <Cursor cursorStyle="<" cursorColor="#B11FEF" />
+            </>
+          }
+        />
         <Header body={"Bartosz Sakiewa"} />
         <Text
           body={`🧙💻  I’m a passionate Frontend

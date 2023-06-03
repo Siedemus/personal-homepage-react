@@ -10,6 +10,7 @@ export const StyledList = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   gap: 8px 40px;
   color: ${({ theme }) => theme.colors.slateGray};
+  letter-spacing: 0.05;
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;

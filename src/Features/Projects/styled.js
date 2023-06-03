@@ -65,7 +65,6 @@ const Project = styled.div`
   transition: 0.8s;
   max-width: 480px;
   width: 100%;
-  max-height: 360px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
 
@@ -102,7 +101,8 @@ const ProjectReferences = styled.div`
 `;
 
 const ProjectReference = styled.p`
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 17px;
   line-height: 17px;
   display: flex;
   align-items: center;
