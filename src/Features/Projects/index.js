@@ -1,3 +1,12 @@
+import { Container } from "../../Common/Container";
+import { Header } from "../../Common/Header";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProjects } from "./projectsSlice";
+import { selectData, selectStatus } from "./projectsSlice";
+import { RingLoader } from "react-spinners";
+import danger from "../../Assets/Images/Danger.png";
+import { Button } from "../../Common/Button";
 import {
   Project,
   ProjectDescription,
@@ -12,15 +21,6 @@ import {
   ErrorContainer,
   ErrorMessage,
 } from "./styled";
-import { Container } from "../../Common/Container";
-import { Header } from "../../Common/Header";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchProjects } from "./projectsSlice";
-import { selectData, selectStatus } from "./projectsSlice";
-import { RingLoader } from "react-spinners";
-import danger from "../../Assets/Images/Danger.png";
-import { Button } from "../../Common/Button";
 
 export const Projects = () => {
   const dispatch = useDispatch();

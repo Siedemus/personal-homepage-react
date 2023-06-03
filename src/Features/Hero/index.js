@@ -1,12 +1,3 @@
-import {
-  ButtonContent,
-  ButtonIcon,
-  HeroContainer,
-  Image,
-  ImageContainer,
-  InfoContainer,
-  SwitchTitle,
-} from "./styled";
 import { Button } from "../../Common/Button";
 import { Header } from "../../Common/Header";
 import { Text } from "../../Common/Text";
@@ -17,6 +8,15 @@ import { Switch } from "./Switch";
 import { useSelector } from "react-redux";
 import { selectIsDarkMode } from "./Switch/switchSlice";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import {
+  ButtonContent,
+  ButtonIcon,
+  HeroContainer,
+  Image,
+  ImageContainer,
+  InfoContainer,
+  SwitchTitle,
+} from "./styled";
 
 export const Hero = () => {
   const [text] = useTypewriter({
