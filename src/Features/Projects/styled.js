@@ -77,7 +77,7 @@ const ProjectTitle = styled.h3`
   font-weight: 700;
   color: ${({ theme }) => theme.colors.violet};
   font-size: 24px;
-  line-height: 19px;
+  line-height: 24px;
   margin: 16px 16px 16px 0;
 `;
 
