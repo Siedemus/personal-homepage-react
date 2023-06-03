@@ -63,8 +63,9 @@ const Project = styled.div`
   border: 6px solid ${({ theme }) => theme.colors.iron};
   border-radius: 4px;
   transition: 0.8s;
-  max-width: 560px;
-  max-height: 300px;
+  max-width: 480px;
+  width: 100%;
+  max-height: 360px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
 
@@ -85,7 +86,8 @@ const ProjectDescription = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 20px;
+  letter-spacing: 0.9px;
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.colors.slateGray};
