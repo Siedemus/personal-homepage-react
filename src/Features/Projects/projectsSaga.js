@@ -8,7 +8,7 @@ import { getProjects } from "./getProjects";
 
 function* fetchProjectsHandler() {
   try {
-    yield delay(200000);
+    yield delay(2000);
     const projects = yield call(getProjects);
     yield put(fetchProjectsSucces(projects));
     yield console.log(projects);

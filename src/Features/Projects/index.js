@@ -25,6 +25,10 @@ import { Button } from "../../Common/Button";
 export const Projects = () => {
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(fetchProjects());
+  }, []);
+
   const data = useSelector(selectData);
   const status = useSelector(selectStatus);
 
