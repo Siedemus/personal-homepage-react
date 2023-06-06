@@ -24,7 +24,7 @@ const Icon = (Icon) => styled(Icon)`
   width: 62px;
   height: 62px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 
   &:hover {
     fill: ${({ theme }) => theme.colors.violet};
@@ -47,8 +47,8 @@ const DiscordContainer = styled.div`
     &::after {
       position: absolute;
       content: "7us#2920";
-      top: -35px;
-      left: -15px;
+      top: -44px;
+      left: -16px;
       background-image: ${({ theme }) => theme.gradients.primary};
       border-radius: 15px;
       padding: 7px;
