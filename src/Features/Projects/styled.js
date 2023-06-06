@@ -63,7 +63,6 @@ const Project = styled.div`
   border: 6px solid ${({ theme }) => theme.colors.iron};
   border-radius: 4px;
   transition: 0.8s;
-  max-width: 480px;
   width: 100%;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
