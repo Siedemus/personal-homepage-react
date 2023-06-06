@@ -56,13 +56,13 @@ export const Projects = () => {
                     <ProjectReference>
                       Demo:&nbsp;
                       <ProjectLink target="_blank" href={project.homepage}>
-                        Click Me!
+                        Link to Demo
                       </ProjectLink>
                     </ProjectReference>
                     <ProjectReference>
                       Code:&nbsp;
                       <ProjectLink target="_blank" href={project.html_url}>
-                        Click Me!
+                        Link to Code
                       </ProjectLink>
                     </ProjectReference>
                   </ProjectReferences>
