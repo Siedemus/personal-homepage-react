@@ -17,6 +17,7 @@ import {
   InfoContainer,
   SwitchTitle,
 } from "./styled";
+import email from "../../Assets/emial";
 
 export const Hero = () => {
   const [text] = useTypewriter({
@@ -58,7 +59,7 @@ export const Hero = () => {
   opportunities.`}
         />
         <Button
-          href="mailto:barsak1177@gmail.com"
+          href={`mailto:${email}`}
           body={
             <>
               <ButtonIcon src={postCard} />

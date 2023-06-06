@@ -10,6 +10,7 @@ import {
   DiscordContainer,
 } from "./styled";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import email from "../../Assets/emial";
 
 export const Footer = () => {
   const [text] = useTypewriter({
@@ -37,7 +38,7 @@ export const Footer = () => {
           </>
         }
       />
-      <Header email body={"barsak1177@gmail.com"} fontSize={"26px"} />
+      <Header email body={email} fontSize={"26px"} />
       <FooterDescription>
         I’m always open to new projects whenever I have the time. If you have a
         website, dashboard or mobile app in mind and need some help to make your
