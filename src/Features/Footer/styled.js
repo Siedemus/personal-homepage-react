@@ -24,6 +24,7 @@ const Icon = (Icon) => styled(Icon)`
   width: 62px;
   height: 62px;
   cursor: pointer;
+  transition: 0.2s;
 
   &:hover {
     fill: ${({ theme }) => theme.colors.violet};
@@ -39,7 +40,6 @@ const GithubContainer = styled.a`
 `;
 
 const DiscordContainer = styled.div`
-  transition: 1s;
   position: relative;
   fill: ${({ theme }) => theme.colors.malaga};
 
