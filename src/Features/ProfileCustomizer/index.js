@@ -1,15 +1,17 @@
-import { Header } from "../../Common/Header";
+import { Header } from "../../Common/Header/styled";
 import { List } from "../../Common/List/styled";
-import { ListItems } from "../../Common/ListItems";
-import { Section } from "../../Common/Section";
+import { Section } from "../../Common/Section/styled";
+import { ListItem } from "../../Common/ListItems/styled";
 
 export const ProfileCustomizer = ({ title, content }) => (
-  <Section
-    header={<Header containerHeader={true} fontSize={"30px"} body={title} />}
-    body={
-      <List>
-        <ListItems items={content} />
-      </List>
-    }
-  />
+  <Section>
+    <Header containerHeader={true} fontSize={"30px"}>
+      {title}
+    </Header>
+    <List>
+      {content.map((item) => (
+        <ListItem key={item}>{item}</ListItem>
+      ))}
+    </List>
+  </Section>
 );

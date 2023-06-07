@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
+export const Section = styled.section`
   padding: 16px 16px 0;
   display: flex;
   gap: 12px;

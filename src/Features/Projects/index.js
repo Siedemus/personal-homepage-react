@@ -1,12 +1,12 @@
 import { Container } from "../../Common/Container/styled";
-import { Header } from "../../Common/Header";
+import { Header } from "../../Common/Header/styled";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProjects } from "./projectsSlice";
 import { selectData, selectStatus } from "./projectsSlice";
 import { RingLoader } from "react-spinners";
 import danger from "../../Assets/Images/Danger.png";
-import { Button } from "../../Common/Button";
+import { Link } from "../../Common/Link/styled";
 import {
   ProjectsContainer,
   Text,
@@ -30,7 +30,9 @@ export const Projects = () => {
   return (
     <Container>
       <GithubIcon />
-      <Header body={"Portfolio"} />
+      <Header>
+        Portfolio
+      </Header>
       <Text>My recent projects</Text>
       {status === "loading" ? (
         <LoadingContainer>
@@ -54,7 +56,7 @@ export const Projects = () => {
             Sorry, failed to load Github projects. You can check them directly
             on Github.
           </Text>
-          <Button href={"https://github.com/Siedemus"} body={"Go to Github"} />
+          <Link href="https://github.com/Siedemus">Go to Github</Link>
         </ErrorContainer>
       ) : null}
     </Container>

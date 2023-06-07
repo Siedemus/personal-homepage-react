@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledText = styled.p`
+export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 19px;

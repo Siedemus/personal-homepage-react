@@ -1,5 +1,5 @@
-import { Title } from "../../Common/Title";
-import { Header } from "../../Common/Header";
+import { Title } from "../../Common/Title/styled";
+import { Header } from "../../Common/Header/styled";
 import {
   FooterDescription,
   IconsContainer,
@@ -30,15 +30,13 @@ export const Footer = () => {
 
   return (
     <StyledFooter>
-      <Title
-        body={
-          <>
-            {text}
-            <Cursor cursorStyle="<" cursorColor="#B11FEF" />
-          </>
-        }
-      />
-      <Header email body={email} fontSize={"26px"} />
+      <Title>
+        {text}
+        <Cursor cursorStyle="<" cursorColor="#B11FEF" />
+      </Title>
+      <Header email fontSize={"26px"}>
+        {email}
+      </Header>
       <FooterDescription>
         I’m always open to new projects whenever I have the time. If you have a
         website, dashboard or mobile app in mind and need some help to make your
