@@ -6,6 +6,7 @@ export const StyledHeader = styled.h2`
   font-size: 40px;
   margin: 8px 0 16px 0;
   color: ${({ theme }) => theme.colors.malaga};
+  overflow-wrap: break-word;
 
   ${({ fontSize }) =>
     fontSize &&
