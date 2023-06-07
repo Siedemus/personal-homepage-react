@@ -1,4 +1,4 @@
-import apiLink from "../../Assets/apiLink";
+import apiLink from "../../Assets/data/apiLink";
 
 export const getProjects = async () => {
   const response = await fetch(apiLink);

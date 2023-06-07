@@ -10,7 +10,7 @@ import {
   DiscordContainer,
 } from "./styled";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import email from "../../Assets/emial";
+import email from "../../Assets/data/emial";
 
 export const Footer = () => {
   const [text] = useTypewriter({

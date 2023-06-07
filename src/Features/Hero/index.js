@@ -16,7 +16,7 @@ import {
   InfoContainer,
   SwitchTitle,
 } from "./styled";
-import email from "../../Assets/emial";
+import email from "../../Assets/data/emial";
 import { Link } from "../../Common/Link/styled";
 
 export const Hero = () => {

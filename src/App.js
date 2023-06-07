@@ -2,13 +2,13 @@ import { ThemeProvider } from "styled-components";
 import { Footer } from "./Features/Footer";
 import { Hero } from "./Features/Hero";
 import { Projects } from "./Features/Projects";
-import { GlobalStyles } from "./Assets/globalStyles";
+import { GlobalStyles } from "./Assets/styles/globalStyles";
 import { useSelector } from "react-redux";
 import { selectIsDarkMode } from "./Features/Hero/Switch/switchSlice";
-import { darkTheme, lightTheme } from "./Assets/theme";
+import { darkTheme, lightTheme } from "./Assets/styles/theme";
 import { ProfileCustomizer } from "./Features/ProfileCustomizer";
-import { skillset } from "./Assets/skillset";
-import { technologies } from "./Assets/technologies";
+import { skillset } from "./Assets/data/skillset";
+import { technologies } from "./Assets/data/technologies";
 
 function App() {
   const darkMode = useSelector(selectIsDarkMode);
