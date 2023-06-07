@@ -1,7 +1,7 @@
-import { StyledButton } from "./styled";
+import { StyledLink } from "./styled";
 
 export const Button = ({ body, href }) => (
-  <StyledButton target="_blank" href={href}>
+  <StyledLink target="_blank" href={href}>
     {body}
-  </StyledButton>
+  </StyledLink>
 );

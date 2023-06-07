@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.a`
+export const StyledLink = styled.a`
   border: none;
   background-image: ${({ theme }) => theme.gradients.second};
   background-size: 290%;
