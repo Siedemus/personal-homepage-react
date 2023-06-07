@@ -8,12 +8,6 @@ import { RingLoader } from "react-spinners";
 import danger from "../../Assets/Images/Danger.png";
 import { Button } from "../../Common/Button";
 import {
-  Project,
-  ProjectDescription,
-  ProjectLink,
-  ProjectReference,
-  ProjectReferences,
-  ProjectTitle,
   ProjectsContainer,
   Text,
   GithubIcon,
@@ -21,6 +15,7 @@ import {
   ErrorContainer,
   ErrorMessage,
 } from "./styled";
+import { Project } from "./Project";
 
 export const Projects = () => {
   const dispatch = useDispatch();
@@ -47,25 +42,9 @@ export const Projects = () => {
       ) : status === "succes" ? (
         <ProjectsContainer>
           {data.map((project) => (
-            <Project key={project.id}>
-              <ProjectTitle>{project.name}</ProjectTitle>
-              <ProjectDescription>{project.description}</ProjectDescription>
-              <ProjectReferences>
-                <ProjectReference>
-                  Demo:&nbsp;
-                  <ProjectLink target="_blank" href={project.homepage}>
-                    Link to Demo
-                  </ProjectLink>
-                </ProjectReference>
-                <ProjectReference>
-                  Code:&nbsp;
-                  <ProjectLink target="_blank" href={project.html_url}>
-                    Link to Code
-                  </ProjectLink>
-                </ProjectReference>
-              </ProjectReferences>
-            </Project>
+            <Project key={project.id} project={project} />
           ))}
+          ;
         </ProjectsContainer>
       ) : status === "error" ? (
         <ErrorContainer>
