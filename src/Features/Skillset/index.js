@@ -1,5 +1,5 @@
 import { Header } from "../../Common/Header";
-import { List } from "../../Common/List";
+import { List } from "../../Common/List/styled";
 import { ListItems } from "../../Common/ListItems";
 import { Section } from "../../Common/Section";
 import { skillset } from "./skillset";
@@ -13,6 +13,10 @@ export const Skillset = () => (
         body={"My skillset includes 🛠️"}
       />
     }
-    body={<List body={<ListItems items={skillset} />} />}
+    body={
+      <List>
+        <ListItems items={skillset} />
+      </List>
+    }
   />
 );

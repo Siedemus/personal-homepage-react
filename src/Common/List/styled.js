@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledList = styled.ul`
+export const List = styled.ul`
   list-style-type: disc;
   font-size: 19px;
   font-weight: 400;
