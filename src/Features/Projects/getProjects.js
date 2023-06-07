@@ -1,5 +1,7 @@
+import apiLink from "../../Assets/apiLink";
+
 export const getProjects = async () => {
-  const response = await fetch("https://api.github.com/users/Siedemus/repos");
+  const response = await fetch(apiLink);
 
   if (!response.ok) {
     throw new Error();
