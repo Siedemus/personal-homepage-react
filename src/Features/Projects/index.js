@@ -30,9 +30,7 @@ export const Projects = () => {
   return (
     <Container>
       <GithubIcon />
-      <Header>
-        Portfolio
-      </Header>
+      <Header>Portfolio</Header>
       <Text>My recent projects</Text>
       {status === "loading" ? (
         <LoadingContainer>
@@ -46,7 +44,6 @@ export const Projects = () => {
           {data.map((project) => (
             <Project key={project.id} project={project} />
           ))}
-          ;
         </ProjectsContainer>
       ) : status === "error" ? (
         <ErrorContainer>
